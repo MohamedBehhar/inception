@@ -34,8 +34,8 @@ services:
       - "3306"
     env_file:
       - .env
-    # volumes:
-    #   - "mariadb-vol:/var/www/wordpress"
+    volumes:
+      - "mariadb-vol:/var/lib/mysql"
     networks:
       - "inception"
 
